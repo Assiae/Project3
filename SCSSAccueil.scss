@@ -1,0 +1,165 @@
+/*Elements de base*/
+:root {
+    margin: auto;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto';
+  }
+  
+  /*Header page d'accueil*/
+  .logo_home_page {
+    font-family: "Shrikhand";
+    font-size: 150%;
+    text-align: center;
+  }
+  
+  /*Footer page d'accueil*/
+  .footer {
+    background-color: #353535;
+  }
+  
+  .logo_footer {
+    font-family: "Shrikhand";
+    margin-left: 40px;
+    color: white;
+  }
+  
+  .list_footer {
+    list-style-type: none;
+    margin-top: 20px;
+  }
+  
+  .text_footer {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto";
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  
+  .fa-solid.fa-utensils {
+    white-space: nowrap;
+    color: white;
+  }
+  
+  .fa-solid.fa-handshake-angle {
+    white-space: nowrap;
+    color: white;
+  }
+  
+  /*Localisation*/
+  
+  .localisation_section {
+    text-align: center;
+    white-space: nowrap;
+    background-color: #eaeaea;
+    border-top: solid #e2e2e2 3px ;
+  }
+  
+  .fa-solid.fa-location-dot {
+    white-space: nowrap;
+  }
+  
+  .localisation {
+    color:#454545;
+    font-weight: bold;
+    margin: 0px;
+  }
+  
+  /*Reservation*/
+  
+   .reservation_section {
+    background-color: #f6f6f6;
+    padding: 35px 0px 50px 0px;
+   }
+  
+   .text_top_one {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 30px 0px 30px;
+    background-color: #f6f6f6;
+  
+  }
+  
+  .text_top_two {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 10px 30px 10px;
+  }
+  
+  .explore {
+    text-align: center;
+  }
+  
+  .explore_conteneur{
+    text-align: center;
+  }
+  
+  .explore_link {
+    border-radius: 60px;
+    text-decoration: none;
+    color: white;
+    border: transparent;
+    padding: 15px 20px 15px 20px;
+    background-image: linear-gradient(to left top, #9356DC, #FF79DA);
+  }
+  
+  .explore {
+    text-align: center;
+    &_conteneur {
+         text-align: center;
+    } 
+    &_link {
+        border-radius: 60px;
+        text-decoration: none;
+        color: white;
+        border: transparent;
+        padding: 15px 20px 15px 20px;
+        background-image: linear-gradient(to left top, #9356DC, #FF79DA); 
+    }
+  }
+  
+  
+  /*Fonctionnement*/
+  
+  .fonc_button {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    align-items: center;
+    display: inline-flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    background-color: #f6f6f6;
+    font-family: inherit;
+    box-shadow: 0 0 16px #0000002e;
+    margin: 3px 30px 20px 30px;
+  }
+  
+  .fonc_button i {
+    height: 38px;
+    width: 38px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 3px;
+    color: #777777;
+    margin: 10px 0px 10px 10px;
+  
+  }
+  
+  .fonc_text {
+    margin: 20px 20px 20px 10px;
+  }
+  
+  .fonc_button:hover, .fonc_button:focus {
+    background-color: #f5edff;
+  }
+  
+  
+  
+  /*# sourceMappingURL=Fraise.css.map */
+  

@@ -1,0 +1,286 @@
+/*Elements de base*/
+:root {
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+/*Header page d'accueil*/
+.logo_home_page {
+  font-family: "Shrikhand";
+  font-size: 150%;
+  text-align: center;
+  margin: 10px;
+}
+
+.fa-solid.fa-location-dot {
+  margin: 0px 5px 0px 5px;
+}
+
+/*Footer page d'accueil*/
+.footer {
+  background-color: #353535;
+  padding: 5px 5px 5px 0px;
+}
+
+.logo_footer {
+  font-family: "Shrikhand";
+  margin-left: 40px;
+  color: white;
+}
+
+.list_footer {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.text_footer {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+.fa-solid.fa-utensils {
+  color: white;
+}
+
+.fa-solid.fa-handshake-angle {
+  color: white;
+}
+
+/*Localisation*/
+.localisation_section {
+  text-align: center;
+  background-color: #eaeaea;
+  border-top: solid #d0d0d0 3px;
+  padding-bottom: 10px;
+}
+
+.fa-solid.fa-location-dot {
+  padding: 0px 10px 0px 0px;
+}
+
+.localisation {
+  color: #454545;
+  font-weight: bold;
+  margin: 10px 0px 6px 0px;
+}
+
+/*Reservation*/
+.reservation_section {
+  background-color: #f6f6f6;
+  padding: 35px 0px 70px 0px;
+}
+
+.text_top_one {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 70px 0px 70px;
+  background-color: #f6f6f6;
+}
+
+.text_top_two {
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 10px 50px 10px;
+}
+
+.explore {
+  text-align: center;
+}
+.explore_conteneur {
+  text-align: center;
+}
+.explore_link {
+  border-radius: 60px;
+  text-decoration: none;
+  color: white;
+  border: transparent;
+  padding: 15px 20px 15px 20px;
+  background-image: linear-gradient(to left top, #9356dc, #ff79da);
+}
+
+/*Fonctionnement*/
+.fonction {
+  display: block;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.fonction_title {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: bold;
+  margin: 40px 20px 30px 40px;
+}
+.fonction_button {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  background-color: #f6f6f6;
+  font-family: inherit;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
+  margin: 3px auto 20px auto;
+  width: 80%;
+}
+.fonction_button i {
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 3px;
+  color: #777777;
+  margin: 10px 0px 10px 0px;
+}
+.fonction_button:hover, .fonction_button:focus {
+  background-color: #f5edff;
+}
+.fonction_button:hover i, .fonction_button:focus i {
+  color: purple;
+}
+.fonction_text {
+  margin: 20px 20px 20px 10px;
+  font-weight: bold;
+}
+
+.circle_number {
+  background-color: #9356dc;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  text-align: center;
+  line-height: 22px;
+  position: relative;
+  left: -15px;
+  flex-shrink: 0;
+}
+
+/*Cartes*/
+.rest_bg {
+  background-color: #f6f6f6;
+  padding: 10px 0px 30px 0px;
+}
+
+.rest {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: bold;
+  margin: 40px 20px 30px 40px;
+}
+
+.rest_list {
+  margin: 0px 30px 20px 30px;
+}
+
+.rest_link {
+  color: black;
+  text-decoration: none;
+}
+
+.rest_art {
+  border-radius: 25px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
+  display: flex;
+  flex-direction: column;
+}
+
+.rest_list img {
+  width: 100%;
+  height: 170px;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
+}
+
+.rest_content {
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+}
+
+.rest_top_p {
+  margin: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.rest_bot_p {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 17px;
+}
+
+/*label*/
+.label {
+  display: inline-block;
+  position: relative;
+}
+
+.label_text {
+  background: #99e2d0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  margin: 0 auto;
+  font-weight: bold;
+  top: 12%;
+  color: #169375;
+  width: 25%;
+  right: 4%;
+  padding: 8px 5px 8px 5px;
+  border-radius: 5%;
+}
+
+/*Coeur*/
+.inline_heart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_heart {
+  background-image: url(heart.svg);
+  background-size: contain;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px 15px 25px 0px;
+}
+.menu_heart:hover .menu_heart_inner {
+  height: 0;
+}
+.menu_heart_inner {
+  background-color: #f6f6f6;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: height 1s;
+  border-radius: 50% 50% 100% 100%;
+}
+.menu_heart_inner_empty {
+  background-image: url(heart_empty.svg);
+  background-size: contain;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: height 1s;
+}
+
+/*# sourceMappingURL=SCSSAccueil.css.map */

@@ -1,0 +1,294 @@
+/*Elements de base*/
+:root {
+  margin: auto;
+  padding: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+/*Header page d'accueil*/
+.logo_home_page {
+  font-family: "Shrikhand";
+  font-size: 150%;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 15px;
+  margin-bottom: 8px;
+}
+
+.fa-solid.fa-arrow-left {
+  position: absolute;
+  left: 40px;
+  padding-top: 25px;
+  margin-top: 0;
+}
+
+.header {
+  text-align: center;
+}
+
+.fa-solid.fa-arrow-left {
+  color: black;
+}
+
+/*Footer page d'accueil*/
+.footer {
+  background-color: #353535;
+  padding: 5px 5px 5px 0px;
+}
+
+.logo_footer {
+  font-family: "Shrikhand";
+  margin-left: 40px;
+  color: white;
+}
+
+.list_footer {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.text_footer {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+.fa-solid.fa-utensils {
+  color: white;
+}
+
+.fa-solid.fa-handshake-angle {
+  color: white;
+}
+
+/* Image*/
+.title {
+  font-family: "Shrikhand";
+  font-weight: 50px;
+  padding: 5px 0px 10px 25px;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  padding: 10px 0px 35px 0px;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  margin-top: -50px;
+}
+.menu_img {
+  width: 100%;
+  height: 100%;
+}
+.menu_text_display {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_list {
+  margin: 15px 12px 15px 12px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.01);
+  animation: fade 333ms ease-in 1 forwards;
+}
+.menu_link {
+  color: black;
+  text-decoration: none;
+}
+.menu_square {
+  width: 0px;
+  background-color: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  transition: width 1s;
+}
+.menu_art {
+  border-radius: 15px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.menu_art:hover .menu_square {
+  width: 60px;
+}
+.menu_art:hover .fa-solid.fa-circle-check {
+  transform: rotate(-360deg);
+}
+.menu_content {
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.menu_top_p {
+  margin: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.menu_bot_p {
+  margin-top: 3px;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.menu_title {
+  font-family: "Roboto";
+  font-size: 17px;
+  padding: 15px 0px 7px 25px;
+  color: #505050;
+  font-weight: lighter;
+}
+.menu_title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: #99e2d0;
+  margin-top: 5px;
+}
+.menu .fa-solid.fa-circle-check {
+  color: white;
+  display: flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 3px;
+  font-size: 20px;
+  top: 24px;
+  transition: transform 500ms ease-in;
+}
+.menu .price {
+  font-weight: bold;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+/*Coeur*/
+.inline_heart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_heart {
+  background-image: url(heart.svg);
+  background-size: contain;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px 15px 25px 0px;
+  margin-top: 28px;
+  margin-right: 48px;
+}
+.menu_heart:hover .menu_heart_inner {
+  height: 0;
+}
+.menu_heart_inner {
+  background-color: #f6f6f6;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: height 1s;
+  border-radius: 50% 50% 100% 100%;
+}
+.menu_heart_inner_empty {
+  background-image: url(heart_empty.svg);
+  background-size: contain;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: height 1s;
+}
+
+/*Bouton*/
+.command {
+  text-align: center;
+}
+.command_conteneur {
+  text-align: center;
+  padding: 50px 0px 40px 0px;
+}
+.command_link {
+  border-radius: 60px;
+  text-decoration: none;
+  color: white;
+  border: transparent;
+  padding: 13px 50px 13px 50px;
+  background-image: linear-gradient(to left top, #9356dc, #ff79da);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*loading page*/
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: wait;
+  background-color: #fbfbfb;
+  position: fixed;
+  animation-name: loader;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader {
+  0% {
+    z-index: 999;
+  }
+  100% {
+    z-index: -9;
+  }
+}
+.loading .dot {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: inline-block;
+  animation: dots 1s infinite ease-in-out alternate;
+}
+
+@keyframes dots {
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+.loading .dot:nth-child(2) {
+  background-color: #FF79DA;
+  animation-delay: 0.4s;
+}
+
+.loading .dot:nth-child(3) {
+  background-color: #99E2D0;
+  animation-delay: 0.5s;
+}
+
+body {
+  margin: 0px;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=MenuCSS.css.map */
