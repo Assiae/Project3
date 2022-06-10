@@ -84,6 +84,7 @@ body {
   &_img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   &_text_display {
@@ -106,13 +107,16 @@ body {
       opacity: 0;
 
       &:nth-child(1) {
-        animation-delay: 5300ms;
+        animation-delay: 5100ms;
       }
       &:nth-child(2) {
-        animation-delay: 5600ms;
+        animation-delay: 5300ms;
       }
       &:nth-child(3) {
-        animation-delay: 5900ms;
+        animation-delay: 5500ms;
+      }
+      &:nth-child(4) {
+        animation-delay: 5700ms;
       }
     }
   }
@@ -153,6 +157,7 @@ body {
     flex-direction: column;
     flex-shrink: 0;
     flex-grow: 1;
+    width: 100px;
   }
 
   &_top_p {
@@ -160,6 +165,9 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin-left: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   &_bot_p {
@@ -167,6 +175,9 @@ body {
     margin-left: 5px;
     font-size: 14px;
     font-weight: lighter;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   &_title {
@@ -282,63 +293,3 @@ body {
   }
 }
 
-
-/*loading page*/
-
-
-.loading{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  cursor: wait;
-  background-color: #fbfbfb;
-  position: fixed;
-  animation-name: loader;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes loader{
-  0%{
-      z-index: 999;
-  }
-
-  100%{
-      z-index: -9;
-  }
-}
-
-.loading .dot {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  background-color:#9356DC;
-  border-radius: 50%;
-  display: inline-block;
-  animation: dots 1s infinite ease-in-out alternate;  
-}
-
-@keyframes dots{
-  100%{
-      opacity: 0;
-      transform:  translateY(-30px);
-  }
-}
-
-.loading .dot:nth-child(2) {
-  background-color: #FF79DA ;
-  animation-delay: 0.4s;
-}
-
-.loading .dot:nth-child(3) {
-  background-color: #99E2D0;
-  animation-delay: 0.5s;
-}
-
-body {
-  margin: 0px;
-  z-index: 1;
-}
