@@ -22,37 +22,7 @@ body {
   margin: 0px 5px 0px 5px;
 }
 
-/*Footer page d'accueil*/
-.footer {
-  background-color: #353535;
-  padding: 5px 5px 5px 0px;
-}
 
-.logo_footer {
-  font-family: "Shrikhand";
-  margin-left: 40px;
-  color: white;
-}
-
-.list_footer {
-  list-style-type: none;
-  margin-top: 20px;
-}
-
-.text_footer {
-  text-decoration: none;
-  color: white;
-  font-family: "Roboto";
-  font-size: 12px;
-}
-
-.fa-solid.fa-utensils {
-  color: white;
-}
-
-.fa-solid.fa-handshake-angle {
-  color: white;
-}
 
 /*Localisation*/
 
@@ -260,45 +230,3 @@ body {
   border-radius: 5%;
 }
 
-/*Coeur*/
-
-.inline_heart {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu_heart {
-  background-image: url(heart.svg);
-  background-size: contain;
-  height: 25px;
-  width: 25px;
-  position: relative;
-  overflow: hidden;
-  margin: 0px 15px 25px 0px;
-
-  &:hover &_inner {
-    height: 0;
-  }
-
-  &_inner {
-    background-color: #f6f6f6;
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: height 1s;
-    border-radius: 50% 50% 100% 100%;
-
-    &_empty {
-      background-image: url(heart_empty.svg);
-      background-size: contain;
-      height: 25px;
-      width: 25px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transition: height 1s;
-    }
-  }
-}

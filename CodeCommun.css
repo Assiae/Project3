@@ -1,0 +1,125 @@
+/*loading page*/
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: wait;
+  background-color: #fbfbfb;
+  position: fixed;
+  animation-name: loader;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader {
+  0% {
+    z-index: 999;
+  }
+  100% {
+    z-index: -9;
+  }
+}
+.loading .dot {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: inline-block;
+  animation: dots 1s 4 ease-in-out alternate;
+}
+
+@keyframes dots {
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+.loading .dot:nth-child(2) {
+  background-color: #FF79DA;
+  animation-delay: 0.4s;
+}
+
+.loading .dot:nth-child(3) {
+  background-color: #99E2D0;
+  animation-delay: 0.5s;
+}
+
+body {
+  margin: 0px;
+  z-index: 1;
+  background-color: white;
+}
+
+/*Coeur*/
+.inline_heart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_heart {
+  background-image: url(heart.svg);
+  background-size: contain;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px 15px 25px 0px;
+}
+.menu_heart:hover .menu_heart_inner {
+  height: 0;
+}
+.menu_heart_inner {
+  background-color: #f6f6f6;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: height 1s;
+  border-radius: 50% 50% 100% 100%;
+}
+.menu_heart_inner_empty {
+  background-image: url(heart_empty.svg);
+  background-size: contain;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: height 1s;
+}
+
+/*Footer**/
+.footer {
+  background-color: #353535;
+  padding: 5px 5px 5px 0px;
+}
+.footer_logo {
+  font-family: "Shrikhand";
+  margin-left: 40px;
+  color: white;
+}
+.footer_list {
+  list-style-type: none;
+  margin-top: 20px;
+}
+.footer_text {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+.fa-solid.fa-utensils {
+  color: white;
+}
+
+.fa-solid.fa-handshake-angle {
+  color: white;
+}
+
+/*# sourceMappingURL=Loader.css.map */
