@@ -1,0 +1,4 @@
+.inline_heart {
+    display: flex;
+    justify-content: space-between;  
+}

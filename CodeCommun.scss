@@ -1,74 +1,77 @@
-/*loading page*/
-
 
 .loading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    cursor: wait;
-    background-color: #fbfbfb;
-    position: fixed;
-    animation-name: loader;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes loader{
-    0%{
-        z-index: 999;
-    }
-  
-    100%{
-        z-index: -9;
-    }
-  }
-  
-  .loading .dot {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    background-color:#9356DC;
-    border-radius: 50%;
-    display: inline-block;
-    animation: dots 1s 4 ease-in-out alternate;
-  }
-  
-  @keyframes dots{
-    100%{
-        opacity: 0;
-        transform:  translateY(-30px);
-    }
-  }
-  
-  .loading .dot:nth-child(2) {
-    background-color: #FF79DA ;
-    animation-delay: 0.4s;
-  }
-  
-  .loading .dot:nth-child(3) {
-    background-color: #99E2D0;
-    animation-delay: 0.5s;
-  }
-  
-  body {
-    margin: 0px;
-    z-index: 1;
-    background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: wait;
+  background-color: #fbfbfb;
+  position: fixed;
+  animation-name: loader;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader{
+  0%{
+      z-index: 999;
   }
 
+  100%{
+      z-index: -9;
+  }
+}
 
-  
+
+.loading_spinner {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loading_spinner div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 5px solid white;
+  border-radius: 50%;
+  animation: loading_spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ff79da transparent transparent transparent;
+}
+
+.loading_spinner div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.loading_spinner div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.loading_spinner div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes loading_spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 /*Coeur*/
 
 .inline_heart {
     display: flex;
     justify-content: space-between;
-    
-  }
+    right: 20px;
+}
   
   .menu_heart {
     background-image: url(heart.svg);
