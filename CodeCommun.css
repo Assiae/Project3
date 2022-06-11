@@ -72,7 +72,7 @@ body {
   margin: 8px;
   border: 5px solid transparent;
   border-radius: 50%;
-  animation: loading_spinner 1.2s ease-in-out 4;
+  animation: loading_spinner 1.2s ease-in-out 4 forwards;
   border-color: #ff79da transparent transparent transparent;
 }
 
