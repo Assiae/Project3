@@ -112,7 +112,7 @@ body {
     flex-direction: row;
     overflow: hidden;
 
-    &:hover .menu_square {
+    &:hover .menu_square, &:focus .menu_square {
       width: 60px;
     }
     

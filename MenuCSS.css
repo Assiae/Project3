@@ -100,7 +100,7 @@ body {
   flex-direction: row;
   overflow: hidden;
 }
-.menu_art:hover .menu_square {
+.menu_art:hover .menu_square, .menu_art:focus .menu_square {
   width: 60px;
 }
 .menu_art:hover .fa-solid.fa-circle-check {
