@@ -22,40 +22,6 @@
   }
 }
 /*loading page*/
-.loading .dot {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  display: inline-block;
-  animation: dots 1s 4 ease-in-out alternate;
-}
-
-@keyframes dots {
-  100% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-}
-.loading .dot:nth-child(2) {
-  background-color: #FF79DA;
-  animation-delay: 0.4s;
-}
-
-.loading .dot:nth-child(3) {
-  background-color: #99E2D0;
-  animation-delay: 0.5s;
-}
-
-body {
-  margin: 0px;
-  z-index: 1;
-  background-color: white;
-  height: 100%;
-}
-
-/*loading page*/
 .loading_spinner {
   display: inline-block;
   position: relative;
