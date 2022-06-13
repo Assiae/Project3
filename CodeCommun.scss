@@ -125,7 +125,7 @@ body {
     background-color: transparent;
     
   
-    &:hover &_inner, &:focus &_inner  {
+    &:hover &_inner {
       height: 0;
     }
   

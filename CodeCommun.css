@@ -114,7 +114,7 @@ body {
   border: 0;
   background-color: transparent;
 }
-.menu_heart:hover .menu_heart_inner, .menu_heart:focus .menu_heart_inner {
+.menu_heart:hover .menu_heart_inner {
   height: 0;
 }
 .menu_heart_inner {
