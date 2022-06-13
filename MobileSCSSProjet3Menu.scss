@@ -91,6 +91,15 @@ body {
     }
   }
 
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
 
 
   &_link {
@@ -195,31 +204,6 @@ body {
   margin-right: 48px;
 }
 
-/*Bouton*/
 
-.command {
-  text-align: center;
-  &_conteneur {
-    text-align: center;
-    padding: 50px 0px 40px 0px;
-  }
-  &_link {
-    border-radius: 60px;
-    text-decoration: none;
-    color: white;
-    border: transparent;
-    padding: 13px 50px 13px 50px;
-    background-image: linear-gradient(to left top, #9356dc, #ff79da);
-  }
-}
 
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 

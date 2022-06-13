@@ -76,6 +76,10 @@ body {
     border: transparent;
     padding: 15px 20px 15px 20px;
     background-image: linear-gradient(to left top, #9356dc, #ff79da);
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
 
@@ -119,8 +123,7 @@ body {
       margin: 10px 0px 10px 0px;
     }
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       background-color: #f5edff;
 
       & i {

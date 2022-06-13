@@ -185,3 +185,24 @@ body {
   .fa-solid.fa-handshake-angle {
     color: white;
   }
+
+  /*Bouton*/
+
+.command {
+  text-align: center;
+  background-color: #f6f6f6;
+  
+  &_conteneur {
+    text-align: center;
+    padding: 15px 0px 60px 0px;
+  }
+  
+  &_link {
+    border-radius: 60px;
+    text-decoration: none;
+    color: white;
+    border: transparent;
+    padding: 13px 50px 13px 50px;
+    background-image: linear-gradient(to left top, #9356dc, #ff79da);
+  }
+}

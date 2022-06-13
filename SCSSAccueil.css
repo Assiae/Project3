@@ -74,6 +74,9 @@ body {
   padding: 15px 20px 15px 20px;
   background-image: linear-gradient(to left top, #9356dc, #ff79da);
 }
+.explore_link:hover {
+  transform: scale(1.02);
+}
 
 /*Fonctionnement*/
 .fonction {
