@@ -103,7 +103,7 @@ body {
 .menu_art:hover .menu_square, .menu_art:focus .menu_square {
   width: 60px;
 }
-.menu_art:hover .fa-solid.fa-circle-check {
+.menu_art:hover .fa-solid.fa-circle-check, .menu_art:focus .fa-solid.fa-circle-check {
   transform: rotate(-360deg);
 }
 .menu_content {

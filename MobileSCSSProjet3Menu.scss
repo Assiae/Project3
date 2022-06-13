@@ -116,7 +116,7 @@ body {
       width: 60px;
     }
     
-    &:hover .fa-solid.fa-circle-check {
+    &:hover .fa-solid.fa-circle-check, &:focus .fa-solid.fa-circle-check  {
       transform: rotate(-360deg); 
     }
   }
