@@ -20,7 +20,7 @@
   }
 
   100%{
-      z-index: -9;
+    z-index: -9;
   }
 }
 
@@ -121,10 +121,11 @@ body {
     position: relative;
     overflow: hidden;
     margin: 0px 15px 25px 0px;
+    border: 0;
+    background-color: transparent;
     
   
-  
-    &:hover &_inner {
+    &:hover &_inner, &:focus &_inner  {
       height: 0;
     }
   
