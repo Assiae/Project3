@@ -8,7 +8,7 @@
   background-color: #fbfbfb;
   position: fixed;
   animation-name: loader;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
