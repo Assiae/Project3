@@ -150,5 +150,9 @@
   padding: 13px 50px 13px 50px;
   background-image: linear-gradient(to left top, #9356dc, #ff79da);
 }
+.command_link:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1803921569);
+  transform: scale(1.02);
+}
 
 /*# sourceMappingURL=CodeCommun.css.map */

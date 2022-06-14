@@ -63,7 +63,7 @@ body {
   margin: 0;
 }
 .menu_list_item {
-  margin: 15px 12px 15px 12px;
+  margin: 15px 15px 15px 15px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.01);
@@ -82,6 +82,10 @@ body {
 }
 .menu_list_item:nth-child(4) {
   animation-delay: 5700ms;
+}
+.menu_list_item:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1803921569);
+  transform: scale(1.02);
 }
 @keyframes fade {
   from {

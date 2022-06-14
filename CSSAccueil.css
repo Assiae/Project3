@@ -75,7 +75,7 @@ body {
   background-image: linear-gradient(to left top, #9356dc, #ff79da);
 }
 .explore_link:hover {
-  transform: scale(1.02);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
 }
 
 /*Fonctionnement*/
@@ -104,6 +104,9 @@ body {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
   margin: 3px auto 20px auto;
   width: 80%;
+}
+.fonction_button:hover {
+  transform: scale(1.02);
 }
 .fonction_button i {
   height: 38px;
@@ -170,6 +173,10 @@ body {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
   display: flex;
   flex-direction: column;
+}
+.rest_art:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1803921569);
+  transform: scale(1.02);
 }
 .rest_content {
   padding: 10px 10px 0px 10px;

@@ -168,5 +168,10 @@
     border: transparent;
     padding: 13px 50px 13px 50px;
     background-image: linear-gradient(to left top, #9356dc, #ff79da);
+
+    &:hover {
+      box-shadow: 0 0 25px #0000002e;
+      transform: scale(1.02);
+    }
   }
 }
